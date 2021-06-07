@@ -1,0 +1,33 @@
+.jumbotron {
+  padding: 3rem 0 3rem 0;
+  margin-bottom: 2rem;
+  background-color: #bf05f8;
+  color: floralwhite;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.row-header {
+  margin: 0 auto;
+  padding: 1em 0;
+}
+.row-content {
+  margin: 3em auto;
+  padding: 1em 0;
+}
+.footer {
+  padding: 2em;
+  background-color: silver;
+}
+.address {
+  font-size: 90%;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-decor-none,
+.text-decor-none * {
+  text-decoration: none;
+}
