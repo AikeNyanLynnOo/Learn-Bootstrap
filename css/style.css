@@ -1,7 +1,7 @@
 .jumbotron {
   padding: 3rem 0 3rem 0;
   margin-bottom: 2rem;
-  background-color: #bf05f8;
+  background-color: rgb(191, 5, 248);
   color: floralwhite;
   border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -40,6 +40,5 @@ body {
 
 .navbar-dark {
   height: 50px;
-  background-color: rgba(216, 1, 237, 0.5);
-  color : floralwhite;
+  background-color: rgba(191,5,248);
 }
