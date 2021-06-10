@@ -9,16 +9,6 @@
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
 }
-.row-header {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1em 0;
-}
-.row-content {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1em 0;
-}
 .footer {
   padding: 2em;
   background-color: silver;

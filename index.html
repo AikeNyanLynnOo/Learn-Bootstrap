@@ -71,7 +71,7 @@
     </nav>
     <header class="jumbotron">
       <div class="container">
-        <div class="row row-header">
+        <div class="row my-4 py-3">
           <div class="col-12 col-sm-6">
             <h1>Ristorante con Fusion</h1>
             <p class="text-justify">
@@ -83,12 +83,16 @@
           <div
             class="
               col-12 col-sm
+              my-2
               d-flex
               align-self-center
               justify-content-center justify-content-sm-end
             "
           >
             <img src="img/logo.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-12 col-sm my-2 d-flex align-items-center justify-content-center justify-content-sm-end">
+            <a role="button" href="#reserveForm" class="col-12 col-sm-9 btn btn-warning">Reserve Table</a>
           </div>
         </div>
       </div>
@@ -99,23 +103,26 @@
       </ol>
     </nav>
     <div class="container">
-      <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
+      <div class="row my-4 py-3 align-items-center">
+        <div class="col-12 col-sm-4 col-md-3 order-first order-sm-last">
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
-        <div class="col-12 col-sm col-md">
-          <div class="row d-flex align-items-start">
+        <div class="col-12 col-sm col-md order-first">
+          <div class="row d-flex align-items-center">
             <img
               src="img/uthappizza.png"
               alt="uthappizza"
-              class="col-12 col-md-2 img-fluid img-thumbnail"
+              class="col-5 col-md-3 img-fluid img-thumbnail"
             />
-            <div class="col-12 col-md-10 pt-0">
-              <h2 class="d-inline-block">Uthappizza</h2>
-              <span class="badge bg-danger">HOT</span>
-              <span class="badge rounded-pill bg-secondary">$ 4.99</span>
-
-              <p class="text-justify">
+            <div class="col col-md-9 pt-0">
+              <div>
+                <h2 class="d-inline-block align-middle">Uthappizza</h2>
+                <span class="badge bg-danger align-middle">HOT</span>
+                <span class="badge rounded-pill bg-secondary align-middle"
+                  >$ 4.99</span
+                >
+              </div>
+              <p class="text-justify d-none d-sm-block">
                 A unique combination of Indian Uthappam (pancake) and Italian
                 pizza, topped with Cerignola olives, ripe vine cherry tomatoes,
                 Vidalia onion, Guntur chillies and Buffalo Paneer.
@@ -124,21 +131,26 @@
           </div>
         </div>
       </div>
-
-      <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3 order-sm-last">
+      <hr />
+      <div class="row my-4 py-3 align-items-center">
+        <div class="col-12 col-sm-4 col-md-3 order-first">
           <h3>This Month's Promotions</h3>
         </div>
-        <div class="col-12 col-sm col-md order-sm-first">
-          <div class="row d-flex align-items-start">
+        <div class="col-12 col-sm col-md">
+          <div class="row d-flex align-items-center">
             <img
               src="img/buffet.png"
-              alt="uthappizza"
-              class="col-12 col-md-2 img-fluid img-thumbnail"
+              alt="buffet"
+              class="col-5 col-md-3 img-fluid img-thumbnail"
             />
-            <div class="col-12 col-md-10 pt-0">
-              <h2>Weekend Grand Buffet</h2>
-              <p class="text-justify">
+            <div class="col col-md-9 pt-0 order-first">
+              <div>
+                <h2 class="d-inline-block align-middle">
+                  Weekend Grand Buffet
+                </h2>
+                <span class="badge bg-danger align-middle">NEW</span>
+              </div>
+              <p class="text-justify d-none d-sm-block">
                 Featuring mouthwatering combinations with a choice of five
                 different salads, six enticing appetizers, six main entrees and
                 five choicest desserts. Free flowing bubbly and soft drinks. All
@@ -148,28 +160,125 @@
           </div>
         </div>
       </div>
-
-      <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
+      <hr />
+      <div class="row my-4 py-3 align-items-center">
+        <div class="col-12 col-sm-4 col-md-3 order-first order-sm-last">
           <h3>Meet our Culinary Specialists</h3>
         </div>
         <div class="col-12 col-sm col-md">
-          <div class="row d-flex align-items-start">
+          <div class="row d-flex align-items-center">
             <img
               src="img/alberto.png"
-              alt="uthappizza"
-              class="col-12 col-md-2 img-fluid img-thumbnail"
+              alt="alberto"
+              class="col-5 col-md-3 img-fluid img-thumbnail"
             />
-            <div class="col-12 col-md-10">
+            <div class="col col-md-9">
               <h2>Alberto Somayya</h2>
               <h4>Executive Chef</h4>
-              <p class="text-justify">
+              <p class="text-justify d-none d-sm-block">
                 Award winning three-star Michelin chef with wide International
                 experience having worked closely with whos-who in the culinary
                 world, he specializes in creating mouthwatering Indo-Italian
                 fusion experiences.
               </p>
             </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="reserveForm" class="row my-4 py-3 justify-content-center">
+        <div class="card col-12 col-md-8 p-0">
+          <div class="card-header text-white bg-warning">
+            <h3>Reserve a Table</h3>
+          </div>
+          <div class="card-body">
+            <form action="#">
+              <div class="row mb-3">
+                <label class="col-12 col-sm-4 mb-2">Number of Guests</label>
+                <div class="col-12 col-sm-8">
+                  <div class="col form-check d-inline-block">
+                    <input
+                      type="radio"
+                      name="guests"
+                      id="one"
+                      class="form-check-input"
+                    />
+                    <label for="one">1</label>
+                  </div>
+                  <div class="col form-check d-inline-block">
+                    <input
+                      type="radio"
+                      name="guests"
+                      id="two"
+                      class="form-check-input"
+                    />
+                    <label for="two">2</label>
+                  </div>
+                  <div class="col form-check d-inline-block">
+                    <input
+                      type="radio"
+                      name="guests"
+                      id="three"
+                      class="form-check-input"
+                    />
+                    <label for="three">3</label>
+                  </div>
+                  <div class="col form-check d-inline-block">
+                    <input
+                      type="radio"
+                      name="guests"
+                      id="four"
+                      class="form-check-input"
+                    />
+                    <label for="four">4</label>
+                  </div>
+                  <div class="col form-check d-inline-block">
+                    <input
+                      type="radio"
+                      name="guests"
+                      id="five"
+                      class="form-check-input"
+                    />
+                    <label for="five">5</label>
+                  </div>
+                  <div class="col form-check d-inline-block">
+                    <input
+                      type="radio"
+                      name="guests"
+                      id="six"
+                      class="form-check-input"
+                    />
+                    <label for="six">6</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="date" class="col-12 col-sm-4 mb-2"
+                  >Date and Time</label
+                >
+                <div class="col-12 col-sm-4">
+                  <input
+                    type="date"
+                    class="form-control mb-2"
+                    name="date"
+                    id="date"
+                  />
+                </div>
+                <div class="col-12 col-sm-4">
+                  <input
+                    type="time"
+                    class="form-control"
+                    name="time"
+                    id="time"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3 justify-content-center">
+                <button class="col-12 col-md-2 btn btn-primary" type="submit">
+                  Reserve
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
