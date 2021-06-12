@@ -48,3 +48,13 @@ body {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
 }
+
+.carousel{
+  background-color: #bf05f8;
+}
+.carousel-item{
+  height: 250px;
+}
+.carousel-item img{
+  min-height: 250px;
+}
