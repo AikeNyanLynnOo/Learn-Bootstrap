@@ -44,7 +44,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
               <a href="/" class="nav-link active"
                 ><i class="fa fa-home fa-lg"></i> Home</a
@@ -60,15 +60,85 @@
                 ><i class="fa fa-bars fa-lg"></i> Menu</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item me-auto">
               <a href="contactus.html" class="nav-link"
                 ><i class="fa fa-address-card fa-lg"></i> Contact</a
               >
             </li>
           </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                role="button"
+                class="nav-link active"
+                data-bs-toggle="modal"
+                data-bs-target="#myModal"
+              >
+                <i class="fa fa-sign-in fa-lg"></i>Login
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row d-flex align-items-center">
+                <div class="col-6 col-sm-4 mb-3 mb-sm-1">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Email"
+                  />
+                </div>
+                <div class="col-6 col-sm-4 mb-3 mb-sm-1">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Enter password"
+                  />
+                </div>
+                <div class="col-12 col-sm-4 mb-3 mb-sm-1">
+                  <div class="form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="remember"
+                      value=""
+                    />
+                    <label for="remember" class="form-check-label"
+                      >Remember me?</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="jumbotron">
       <div class="container">
         <div class="row my-4 py-3">
@@ -91,8 +161,24 @@
           >
             <img src="img/logo.png" alt="" class="img-fluid" />
           </div>
-          <div class="col-12 col-sm my-2 d-flex align-items-center justify-content-center justify-content-sm-end">
-            <a role="button" href="#reserveForm" class="col-12 col-sm-9 btn btn-warning">Reserve Table</a>
+          <div
+            class="
+              col-12 col-sm
+              my-2
+              d-flex
+              align-items-center
+              justify-content-center justify-content-sm-end
+            "
+          >
+            <a
+              role="button"
+              href="#reserveForm"
+              class="col-12 col-sm-9 btn btn-warning"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+              title="Or call us at +95932843241"
+              >Reserve Table</a
+            >
           </div>
         </div>
       </div>
@@ -348,6 +434,15 @@
         </div>
       </div>
     </footer>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
   </body>
 </html>
