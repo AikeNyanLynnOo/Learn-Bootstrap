@@ -30,5 +30,21 @@ body {
 
 .navbar-dark {
   min-height: 50px;
-  background-color: rgba(191, 5, 248,0.9);
+  background-color: rgba(191, 5, 248, 0.9);
+}
+
+.nav-tabs button{
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 1em;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
