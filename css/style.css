@@ -58,3 +58,8 @@ body {
 .carousel-item img{
   min-height: 250px;
 }
+
+.btn:focus{
+  outline : none !important; 
+  box-shadow: none;
+}
