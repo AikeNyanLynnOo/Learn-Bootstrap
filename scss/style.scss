@@ -1,0 +1,86 @@
+$lt-gray: #ddd;
+$background-dark: #512da8;
+$background-light: #9575cd;
+$background-pale: #D1C4E9;
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+@mixin border($top, $right, $bottom, $left) {
+  border-left: $left;
+  border-bottom: $bottom;
+  border-right: $right;
+  border-top: $top;
+}
+
+.jumbotron {
+  padding: 3rem 0 3rem 0;
+  margin-bottom: 2rem;
+  background-color: $background-dark;
+  color: floralwhite;
+  @include border-radius(2px);
+}
+.footer {
+  padding: 2em;
+  background-color: silver;
+}
+.address {
+  font-size: 90%;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-decor-none,
+.text-decor-none * {
+  text-decoration: none;
+}
+
+body {
+  padding: 50px 0 0 0;
+}
+
+.navbar-dark {
+  min-height: 50px;
+  background-color: $background-dark;
+}
+
+.nav-tabs button {
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 1em;
+  @include border(none, 1px solid #ddd, 1px solid #ddd, 1px solid #ddd);
+  @include border-radius(3px);
+}
+
+.carousel {
+  background-color: $background-light;
+}
+.carousel-item {
+  height: 250px;
+}
+.carousel-item img {
+  min-height: 250px;
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.modal-header {
+  background-color: $background-dark;
+  color: floralwhite;
+}
+.modal-body {
+  background-color: $background-pale;
+}
+.btn-close-white{
+    color: floralwhite;
+    opacity: 1;
+}
