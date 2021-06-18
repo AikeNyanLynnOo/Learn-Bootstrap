@@ -7,39 +7,31 @@
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-}
+  -o-border-radius: 2px; }
 
 .footer {
   padding: 2em;
-  background-color: silver;
-}
+  background-color: silver; }
 
 .address {
-  font-size: 90%;
-}
+  font-size: 90%; }
 
 .text-justify {
-  text-align: justify;
-}
+  text-align: justify; }
 
 .text-decor-none,
 .text-decor-none * {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 body {
-  padding: 50px 0 0 0;
-}
+  padding: 50px 0 0 0; }
 
 .navbar-dark {
   min-height: 50px;
-  background-color: #512da8;
-}
+  background-color: #512da8; }
 
 .nav-tabs button {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .tab-content {
   padding: 1em;
@@ -51,38 +43,28 @@ body {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-}
+  -o-border-radius: 3px; }
 
 .carousel {
-  background-color: #9575cd;
-}
+  background-color: #9575cd; }
 
 .carousel-item {
-  height: 250px;
-}
+  height: 250px; }
 
 .carousel-item img {
-  min-height: 250px;
-}
+  min-height: 250px; }
 
 .btn:focus {
   outline: none !important;
-  box-shadow: none;
-}
+  box-shadow: none; }
 
 .modal-header {
   background-color: #512da8;
-  color: floralwhite;
-}
+  color: floralwhite; }
 
 .modal-body {
-  background-color: #D1C4E9;
-}
+  background-color: #D1C4E9; }
 
 .btn-close-white {
   color: floralwhite;
-  opacity: 1;
-}
-
-/*# sourceMappingURL=style.css.map */
+  opacity: 1; }
